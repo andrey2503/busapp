@@ -1,0 +1,14 @@
+pagina home
+
+	<mapa clickeable>
+	<lista de rutas por zona>
+
+pagina empresas 
+
+	<lista de emprezas para la ruta seleccionada>
+
+pagina informacion
+	<informacion general de la empresa>
+	<consultar horarios>
+	<consultar ubicacion "como llegar">
+	<descargar mapa>
