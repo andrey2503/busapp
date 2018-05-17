@@ -1,3 +1,55 @@
 page-home {
-
+  .lista-rutas{
+    margin-top: 380px;
+  }
 }
+.cont-01{
+    background-color: red;
+  }
+  .cont-02{
+  
+  }
+  .mapa { width: 100%; max-width: 742px; }
+  .mapa-completo{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 742px;
+    width: 100%;
+    z-index: 1;
+    visibility: visible;
+  }
+  .provincias{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+      width: 100%;
+    z-index: 2;
+    max-width: 742px;
+    visibility: visible;
+  }
+  .botones{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    width: 100%;
+    max-width: 742px;
+    visibility: visible;
+  }
+  .bot-01{
+    width: 100%;
+  }
+  
+  
+  .boton { padding: 4px; color: white; font-weight: bold; position: absolute; }
+  .boton:hover { color: white;  }
+  
+  #llanuras { top: 12%; left: 42%;}
+  #central { top: 30%;left: 54%;}
+  #guanacaste { top: 20%; left: 22%;}
+  #pnorte { top: 29%; left: 30%;}
+  #pcentral { top:43%; left: 48%;}
+  #psur { top: 53%; left: 72%;}
+  #caribe { top: 37%; left: 80%;}
+  

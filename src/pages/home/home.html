@@ -7,8 +7,34 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  
+  
+ 
+    
+    <div class="col-md-10 cont-02">
+      <div class="mapa-completo">
+        <img id="mapa" class="bot-01" src="./assets/imgs/img/mapa-costa-rica-copy.png" alt="">
+      </div>
+      <div class="provincias">
+        <img id="img-h" class="bot-01" src="./assets/imgs/img/nada.png" alt="">
+      </div>
+      <div class="botones">
+        <img class=" bot-01"src="./assets/imgs/img/nada.png" alt="">
+        <a class=" btn boton" id="llanuras" (click)="clickMap(1,'./assets/imgs/img/llanuras-norte.png')">Llanuras del Norte</a>
+        <a  class="btn boton" id="central" (click)="clickMap(2,'./assets/imgs/img/central.png')">Valle Central</a>
+        <a  class="btn  boton" id="guanacaste" (click)="clickMap(3,'./assets/imgs/img/guanacaste.png')">Guanacaste</a>
+        <a  class="btn  boton" id="pnorte" (click)="clickMap(4,'./assets/imgs/img/north-pacific.png')">Pacífico Norte</a>
+        <a  class="btn  boton" id="pcentral" (click)="clickMap(5,'./assets/imgs/img/central-pacific.png')">Pacífico Central</a>
+        <a  class="btn  boton" id="psur" (click)="clickMap(6,'./assets/imgs/img/south-pacific.png')">Pacífico Sur</a>
+        <a class="btn  boton" id="caribe" (click)="clickMap(7,'./assets/imgs/img/caribe.png')">Caribe</a>
+      </div>
+    </div>
+
+    <ion-list class="lista-rutas">
+      <button ion-item *ngFor="let item of rutas" (click)="loadhorario(item.id)">
+        {{ item.ruta }}
+      </button>  
+    </ion-list>
+  
+
 </ion-content>
