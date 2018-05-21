@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import * as $ from 'jquery';
 
 import { HorarioPage }  from '../horario/horario';
+import { InformacionRutagPage } from '../informacion-rutag/informacion-rutag';
 import { DataProvinciaProvider } from '../../providers/data-provincia/data-provincia';
 import { LoadingController } from 'ionic-angular';
 @Component({
@@ -24,18 +25,22 @@ loadhorario(id){
   this.navCtrl.push(HorarioPage,{'id':id});
 }
 
-clickMap(id,ruta){
-  this.loadroute(id);  
+loadInformacionRuta(id,ruta){
+  this.navCtrl.push(InformacionRutagPage,{'id':id,'ruta':ruta});
+}
+
+clickMap(zona,ruta){
+  this.loadroute(zona);  
   $("#img-h").attr("src",ruta);  
 }
 
-loadroute(id){
+loadroute(zona){
   let loader = this.loadingCtrl.create({
     content: "Cargando rutas..."
     });
   loader.present();
-  this.datos_provicia.getRutas(id).subscribe(data=>{
-    this.rutas=data['Esparza'];
+  this.datos_provicia.getRutas(zona).subscribe(data=>{
+    this.rutas=data;
     console.log(this.rutas);
     loader.dismiss();
     

@@ -16,12 +16,17 @@ export class DataProvinciaProvider {
     // this.ruta="API";
   }
 
-  getRutas(id){
-    return this.http.get(this.ruta+'/busapp/rutas.json');
+  getRutas(zona){
+    return this.http.get(this.ruta+'/api/public/api/rutas/'+zona);
   }// fin de getRutas
 
-  getHorarios(id){
-    return this.http.get(this.ruta+'/busapp/horarios.json');    
+  getHorarios(id_ruta){
+    return this.http.get(this.ruta+'/api/public/api/horario/'+id_ruta);    
+  }
+
+  getTerminal(id_terminal){
+    return this.http.get(this.ruta+'/api/public/api/terminal/'+id_terminal);    
+
   }
 
   getPostCentral(){

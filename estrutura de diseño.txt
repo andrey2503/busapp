@@ -1,6 +1,6 @@
 pagina home
 
-	<mapa clickeable>
+	<mapa clickeable>--arreglar
 	<lista de rutas por zona>
 
 pagina empresas 

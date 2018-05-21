@@ -13,7 +13,7 @@
     
     <div class="col-md-10 cont-02">
       <div class="mapa-completo">
-        <img id="mapa" class="bot-01" src="./assets/imgs/img/mapa-costa-rica-copy.png" alt="">
+        <img id="mapa" class="bot-01" src="./assets/imgs/img/mapa.png" alt="">
       </div>
       <div class="provincias">
         <img id="img-h" class="bot-01" src="./assets/imgs/img/nada.png" alt="">
@@ -31,7 +31,7 @@
     </div>
 
     <ion-list class="lista-rutas">
-      <button ion-item *ngFor="let item of rutas" (click)="loadhorario(item.id)">
+      <button ion-item *ngFor="let item of rutas" (click)="loadInformacionRuta(item.id,item.ruta)">
         {{ item.ruta }}
       </button>  
     </ion-list>

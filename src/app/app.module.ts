@@ -8,9 +8,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ProvinciaPage } from '../pages/provincia/provincia';
 import { HorarioPage } from '../pages/horario/horario';
+import { InformacionRutagPage } from '../pages/informacion-rutag/informacion-rutag';
+
 import { MapaPage } from '../pages/mapa/mapa';
 import { DataProvinciaProvider } from '../providers/data-provincia/data-provincia';
 import { GoogleMaps } from '@ionic-native/google-maps';
+
 
 
 @NgModule({
@@ -19,7 +22,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     HomePage,
     ProvinciaPage,
     HorarioPage,
-    MapaPage
+    MapaPage,
+    InformacionRutagPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,8 @@ import { GoogleMaps } from '@ionic-native/google-maps';
     HomePage,
     ProvinciaPage,
     HorarioPage,
-    MapaPage
+    MapaPage,
+    InformacionRutagPage
   ],
   providers: [
     StatusBar,
